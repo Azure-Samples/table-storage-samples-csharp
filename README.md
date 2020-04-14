@@ -1,32 +1,20 @@
----
-page_type: sample
-languages:
-- csharp
-products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
----
+# Table Storage samples with the Azure Cosmos DB Table library
 
-# Official Microsoft Sample
+This repo contains basic samples that demonstrate how to use the [Azure Cosmos DB Table library](https://docs.microsoft.com/en-us/azure/cosmos-db/table-sdk-dotnet-standard) to manage Azure Table Storage tables.
 
-<!-- 
-Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
-
-Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
-
-Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
--->
-
-Give a short description for your sample here. What does it do and why is it important?
+Samples are based on [version 1.0.6](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Table/1.0.6) of the library NuGet package.
 
 ## Contents
 
-Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
+The samples are based on a book entity with author, title, publication date, and ISBN, stored in a table with the author name
+as the partition key and the ISBN as row key. The approach intends to demonstrate how to use the APIs and is definitely not
+a recommendation on how to partition and store similar information.
 
 | File/folder       | Description                                |
 |-------------------|--------------------------------------------|
 | `src`             | Sample source code.                        |
+| `src/Shared`      | Contains the definition for the BookEntity and sample data loading. The connection string for the Table Storage service is retrieved from an environment variable. |
+| `src/QueryData`    | Demonstrates how to query data in a table using filters, ordering, and top N items. |
 | `.gitignore`      | Define what to ignore at commit time.      |
 | `CHANGELOG.md`    | List of changes to the sample.             |
 | `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
@@ -35,11 +23,15 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 ## Prerequisites
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+Visual Studio 2019 or VSCode.
 
 ## Setup
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
+Open `src/Samples.sln` in Visual Studio 2019 or the `src` folder in VSCode.
+Add your Table Storage connection string in the StorageConnectionString environment variable.
+
+* Visual Studio 2019: Open the `QueryData` project properties and add it in the `Debug` page.
+* VSCode: Edit `.vscode/launch.json` and add `"env": { "StorageConnectionString": "your connection string" }` to your `configurations` section.
 
 ## Running the sample
 
@@ -47,13 +39,13 @@ Outline step-by-step instructions to execute the sample and see its output. Incl
 
 ## Key concepts
 
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+Run or step through Program.cs in the QueryData project.
 
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+the rights to use your contribution. For details, visit [https://cla.opensource.microsoft.com](https://cla.opensource.microsoft.com).
 
 When you submit a pull request, a CLA bot will automatically determine whether you need to provide
 a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
