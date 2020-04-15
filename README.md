@@ -6,9 +6,12 @@ products:
 - dotnet
 - dotnet-core
 - azure-table-storage
+description: This repo contains basic samples that demonstrate how to use the Azure Cosmos DB Table library to manage Azure Table Storage tables.
 ---
 
 # Table Storage samples with the Azure Cosmos DB Table library
+
+![GitHub Actions status](https://github.com/CodeRunRepeat/table-storage-samples-csharp-2/workflows/build/badge.svg)
 
 This repo contains basic samples that demonstrate how to use the [Azure Cosmos DB Table library](https://docs.microsoft.com/en-us/azure/cosmos-db/table-sdk-dotnet-standard) to manage Azure Table Storage tables.
 
