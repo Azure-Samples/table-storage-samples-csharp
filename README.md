@@ -48,10 +48,6 @@ Add your Table Storage connection string in the StorageConnectionString environm
 
 ## Running the sample
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
-
-## Key concepts
-
 Run or step through Program.cs in the QueryData project.
 
 ## Contributing
