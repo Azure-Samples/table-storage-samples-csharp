@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryData", "QueryData\QueryData.csproj", "{2BD90DC8-4D29-4D44-97AD-90D428014603}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{3620913C-DC01-4A12-B2CC-6DC7F2A76890}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{3620913C-DC01-4A12-B2CC-6DC7F2A76890}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

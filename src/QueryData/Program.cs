@@ -1,5 +1,5 @@
 ﻿using Microsoft.Azure.Cosmos.Table;
-using Shared;
+using Common;
 using System;
 
 namespace QueryData
