@@ -26,7 +26,7 @@ a recommendation on how to partition and store similar information.
 | File/folder       | Description                                |
 |-------------------|--------------------------------------------|
 | `src`             | Sample source code.                        |
-| `src/Shared`      | Contains the definition for the BookEntity and sample data loading. The connection string for the Table Storage service is retrieved from an environment variable. |
+| `src/Common`      | Contains the definition for the BookEntity and sample data loading. The connection string for the Table Storage service is retrieved from an environment variable. |
 | `src/QueryData`    | Demonstrates how to query data in a table using filters, ordering, and top N items. |
 | `.gitignore`      | Define what to ignore at commit time.      |
 | `CHANGELOG.md`    | List of changes to the sample.             |

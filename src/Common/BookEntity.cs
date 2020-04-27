@@ -2,7 +2,7 @@
 using System;
 using System.Globalization;
 
-namespace Shared
+namespace Common
 {
     public class BookEntity : TableEntity
     {

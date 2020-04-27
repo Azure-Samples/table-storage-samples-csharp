@@ -1,7 +1,7 @@
 ﻿using Microsoft.Azure.Cosmos.Table;
 using System;
 
-namespace Shared
+namespace Common
 {
     public static class TableService
     {
